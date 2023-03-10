@@ -5,5 +5,5 @@ import tsConfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tsConfigPaths(), eslintPlugin()],
+  plugins: [react(), tsConfigPaths(), eslintPlugin({ eslintOptions: { cache: false } })],
 })
