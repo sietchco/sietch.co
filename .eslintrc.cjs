@@ -31,5 +31,6 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    '@typescript-eslint/ban-types': 'off',
   },
 }
