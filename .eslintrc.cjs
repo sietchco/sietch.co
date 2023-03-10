@@ -14,7 +14,14 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: [
+    'react',
+    'react-hooks',
+    'jsx-a11y',
+    'simple-import-sort',
+    '@typescript-eslint',
+    'prettier',
+  ],
   settings: {
     react: {
       version: 'detect',
@@ -22,5 +29,7 @@ module.exports = {
   },
   rules: {
     'react/react-in-jsx-scope': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
 }
