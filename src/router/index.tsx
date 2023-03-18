@@ -4,6 +4,7 @@ import Contact from '@/pages/Contact'
 import Home from '@/pages/Home'
 import Services from '@/pages/Services'
 import Work from '@/pages/Work'
+import Team from '@/pages/Team'
 
 const browserRouter = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const browserRouter = createBrowserRouter([
   {
     path: '/services',
     element: <Services />,
+  },
+  {
+    path: '/team',
+    element: <Team />,
   },
   {
     path: '/contact',

@@ -19,21 +19,21 @@ button {
 button::before {
   position: absolute;
   content: "";
-  background-image: linear-gradient(to left, #E4F1FF 0%, rgb(254 251 246) 100%);
+  /* background-image: linear-gradient(to left, #E4F1FF 0%, rgb(254 251 246) 100%); */
+  background: linear-gradient(252.9deg, #E4F1FF 6.3%, #EDEFFF 30.06%, #FFFFFF 83.61%);
   width: 250px;
   height: 100px;
   z-index: -1;
 }
 
 button:before {
-  top: 100%;
   left: 100%;
   transition: .5s all;
 }
 
 button:hover::before {
   top: -30px;
-  left: -30px;
+  left: -0px;
 }
 
 /* burguer btn */
@@ -145,4 +145,12 @@ a:hover::after{
 }
 .link:hover::after{
   transform: scaleX(0);
+}
+
+/* bg-section today */
+.bg-today{
+  background-image: url('../assets/img/bg-today.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

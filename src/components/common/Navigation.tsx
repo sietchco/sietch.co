@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import BurguerBtn from '@/components/ui/BurguerBtn'
 
 import logoSietch from '@/assets/img/sietch-logo.png'
@@ -22,11 +24,11 @@ const Navigation = (props) => {
         ? 'capitalize fixed flex flex-col flex-nowrap top-[0] right-0 pl-10 pt-[23vh] text-6xl bg-ui-black text-ui-white h-screen w-screen md:bg-inherit md:text-inherit md:flex-row md:text-base md:uppercase md:static md:h-0 md:p-0 md:flex md:items-center md:justify-end z-10' 
         : ''}
       `}>
-        <a href="" className='mx-5 max-md:my-2 md:hidden'>home</a>
-        <a href="" className='mx-5 max-md:my-2'>work</a>
-        <a href="" className='mx-5 max-md:my-2'>services</a>
-        <a href="" className='mx-5 max-md:my-2'>team</a>
-        <a href="" className='mx-5 max-md:my-2'>contact</a>
+        <Link to="/" className='mx-5 max-md:my-2 md:hidden'>home</Link>
+        <Link to="/work" className='mx-5 max-md:my-2'>work</Link>
+        <Link to="/services" className='mx-5 max-md:my-2'>services</Link>
+        <Link to="/team" className='mx-5 max-md:my-2'>team</Link>
+        <Link to="/contact" className='mx-5 max-md:my-2'>contact</Link>
         <div className={`${navbar ? 'text-base pl-6 pt-16 md:hidden' : 'hidden'}`}>
           <span className='mr-10 font-bold text-xl tracking-[-1px]'>Sietch</span>
           <span className='mr-10 cursor-pointer linkedin'>Linkedin</span>

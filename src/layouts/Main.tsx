@@ -1,6 +1,7 @@
 import { PropsWithChildren, useState } from 'react'
 import clsx from 'clsx'
 import Navigation from '@/components/common/Navigation'
+import Footer from './Footer'
 
 type MainProps = PropsWithChildren<{}>
 
@@ -15,6 +16,7 @@ const Main = (props: MainProps) => {
     <div>
       <Navigation navbar={navbar} setNavbar={setNavbar} />
       <main className={childrenWrapperclasses}>{children}</main>
+      <Footer />
     </div>
   )
 }
