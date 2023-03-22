@@ -1,7 +1,8 @@
 import { PropsWithChildren, useState } from 'react'
 import clsx from 'clsx'
+
 import Navigation from '@/components/common/Navigation'
-import Footer from './Footer'
+import Footer from '@/components/common/Footer'
 
 type MainProps = PropsWithChildren<{}>
 

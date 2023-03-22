@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 
 import BurguerBtn from '@/components/ui/BurguerBtn'
-
 import logoSietch from '@/assets/img/sietch-logo.png'
 
 const Navigation = (props) => {
@@ -13,18 +12,20 @@ const Navigation = (props) => {
   }
 
   return (
-    <nav className='flex justify-between container m-auto py-10 items-center max-sm:py-5'>
-      <div className='flex items-center'>
+    <div className='bg-gradient-to-b from-[#D8E6F566] to-[#D8E6F566]'>
+    <nav className='flex justify-between container m-auto py-10 items-center max-sm:py-5 bg-fixed'>
+      <Link to="/" className='flex items-center'>
         <img src={logoSietch} alt="SietchLogo" className='h-10 max-sm:ml-8' />
-        {/* <span className='font-extrabold text-3xl ml-5 tracking-[-2px] text-ui-black max-sm:text-2xl'>Sietch</span> */}
-      </div>
+      </Link>
 
       <div className={`
       uppercase absolute top-[-60px] md:relative md:top-0 align-middle text-ui-black ${navbar 
         ? 'capitalize fixed flex flex-col flex-nowrap top-[0] right-0 pl-10 pt-[23vh] text-6xl bg-ui-black text-ui-white h-screen w-screen md:bg-inherit md:text-inherit md:flex-row md:text-base md:uppercase md:static md:h-0 md:p-0 md:flex md:items-center md:justify-end z-10' 
         : ''}
       `}>
-        <Link to="/" className='mx-5 max-md:my-2 md:hidden'>home</Link>
+        <Link to="/" className='mx-5 max-md:my-2 md:hidden'>
+          <span>home</span>
+        </Link>
         <Link to="/work" className='mx-5 max-md:my-2'>work</Link>
         <Link to="/services" className='mx-5 max-md:my-2'>services</Link>
         <Link to="/team" className='mx-5 max-md:my-2'>team</Link>
@@ -41,6 +42,7 @@ const Navigation = (props) => {
         <BurguerBtn navbar={navbar} toggleNavbar={toggleNavbar} />
       </div>
     </nav>
+    </div>
   )
 }
 

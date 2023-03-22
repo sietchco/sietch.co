@@ -8,6 +8,10 @@
   }
 }
 
+@font-face {
+  font-family: 'Train One';
+  src: url('../assets/fonts/TrainOne-Regular.ttf');
+}
 
 /* Button hover styles */
 button {
@@ -129,6 +133,7 @@ a:hover::after{
 .link{
   position: relative;
   padding: 2px 0;
+  cursor: pointer;
 }
 .link::after{
   content: "";
@@ -153,4 +158,8 @@ a:hover::after{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+select {
+  
 }
