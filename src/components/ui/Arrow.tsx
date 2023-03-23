@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-function SvgArrow(props: React.SVGProps<SVGSVGElement>) {
+const SvgArrow = (props: React.SVGProps<SVGSVGElement>) => {
     return (
     <svg
     xmlnsXlink="http://www.w3.org/1999/xlink"
