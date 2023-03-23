@@ -1,31 +1,31 @@
-import { useEffect } from "react"
-
-import Main from "@/layouts/Main"
-import Counter from "@/utils/Counter"
+import { Helmet } from "react-helmet"
 
 import one2 from "@/assets/img/one2.jpeg"
 import lunch from "@/assets/svg/lunch.svg"
+import Main from "@/layouts/Main"
+import Counter from "@/utils/Counter"
 
 const Team = () => {
-  useEffect(() => {
-    document.title = "Our Team | Sietch"
-  }, [])
-  
   return (
     <Main>
+    <Helmet>
+      <title>Our Team | Sietch</title>
+    </Helmet>
     <div className="text-ui-black bg-white">
+      {/* hero section our team */}
       <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f]">
         <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
           pt-48 pb-52 max-md:pt-24 max-md:pb-36">
         <h3 className="text-center text-xl font-bold py-10 uppercase">our team</h3>
           <div className="">
             <p className="text-[2.5rem] font-bold max-md:text-[1.5rem]">
-            &quot;Sietch believes that people are what make a company valuable. Both internally and with partners, we work with good people all around.&quot;</p>
+            "Sietch believes that people are what make a company valuable. Both internally and with partners, we work with good people all around."</p>
             <p className="pt-10 text-xl max-md:text-[18px] max-sm:flex max-sm:flex-col">—Ericka Castillo, Senior Product Designer</p>
           </div>
         </div>
       </section>
 
+      {/* Cards section with number counter */}
       <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 py-40 max-md:pt-28 max-md:pb-14">
         <h2 className="text-6xl text-center mb-36 max-md:text-3xl max-md:mb-24">Life at Sietch</h2>
 
@@ -33,7 +33,7 @@ const Team = () => {
           <img src={one2} alt="" title="" decoding="async"/>
           <div>
             <h3 className="text-xl font-bold my-10 max-md:text-xl">ONE SIETCH</h3>
-            <div className="text-3xl max-md:text-xl">Our team members are distributed across North and South America, but we&apos;re not a U.S. team with near-shore engineering. We&apos;re one flat, integrated team of product professionals in 10 countries.</div>
+            <div className="text-3xl max-md:text-xl">Our team members are distributed across North and South America, but we're not a U.S. team with near-shore engineering. We're one flat, integrated team of product professionals in 10 countries.</div>
           </div>
         </div>
 
@@ -53,11 +53,12 @@ const Team = () => {
         </div>
       </section>
 
+      {/* Cards section and team skills */}
       <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
       grid grid-cols-2 gap-32 place-items-center max-md:grid-cols-1 max-md:gap-2">
         <div>
           <h3 className="text-xl font-bold my-10 max-md:text-xl">TEAM</h3>
-          <div className="text-3xl max-md:text-xl">We&apos;re a passionate and creative team that likes to work hard and have fun.<p className="my-10">If you’re an entrepreneur at heart who gets excited about social change, tinkering on side projects, and mingling with fellow builders, then we&apos;d love to meet you.</p></div>
+          <div className="text-3xl max-md:text-xl">We're a passionate and creative team that likes to work hard and have fun.<p className="my-10">If you’re an entrepreneur at heart who gets excited about social change, tinkering on side projects, and mingling with fellow builders, then we'd love to meet you.</p></div>
         </div>
         <img src={one2} alt="" />
         <div>
@@ -92,6 +93,7 @@ const Team = () => {
         </div>
       </section>
 
+      {/* Join us section */}
       <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f]">
         <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 py-52 max-md:py-32">
           <h3 className="text-center text-5xl mb-40 max-md:mb-36 max-md:text-4xl">Join us!</h3>
@@ -119,7 +121,7 @@ const Team = () => {
             </div>
             <div>
               <div className="text-2xl font-semibold leading-10 max-md:text-xl max-md:leading-8">
-              &quot;Working at Sietch has allowed me to grow a lot professionally. I&apos;ve learned new stuff and accepted interesting challenges while helping our team build great productos. But the people at Sietch, with their incredible support and trust, have helped me grow as a person.&quot;
+              "Working at Sietch has allowed me to grow a lot professionally. I've learned new stuff and accepted interesting challenges while helping our team build great productos. But the people at Sietch, with their incredible support and trust, have helped me grow as a person."
               <p className="pt-5 font-normal text-[16px] max-md:text-right">—Ericka Castillo, Senior Product Designer</p>
               </div>
             </div>
@@ -127,6 +129,7 @@ const Team = () => {
         </div>
       </section>
 
+      {/* Leadership section with dark bg */}
       <section className="bg-today text-ui-white mb-[530px] max-md:mb-[340px]">
         <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 py-40 max-md:py-20">
           <h3 className="text-xl font-bold my-10 max-md:text-center max-md:my-8">LEADERSHIP</h3>

@@ -1,33 +1,34 @@
-import { useEffect } from "react"
-import Main from "@/layouts/Main"
+import { Helmet } from "react-helmet"
 
 import img from '@/assets/svg/pici.svg'
+import Main from "@/layouts/Main"
 
 const Services = () => {
-  useEffect(() => {
-    document.title = "Our Services | Sietch"
-  }, [])
-
   return(
   <Main>
+    <Helmet>
+      <title>Our Services | Sietch</title>
+    </Helmet>
     <div className="text-ui-black bg-white">
+      {/* hero section services */}
       <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f]">
         <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
           pt-48 pb-52 max-md:pt-24 max-md:pb-36">
         <h3 className="text-center text-xl font-bold py-10 uppercase">services</h3>
           <div className="">
             <p className="text-[2.5rem] font-bold max-md:text-[1.5rem]">
-            &quot;Sietch team build the first version of our product wich led to our Series A&quot;
+            "Sietch team build the first version of our product wich led to our Series A"
             </p>
             <p className="pt-10 text-xl max-md:text-[18px] max-sm:flex max-sm:flex-col">—Ericka Castillo, Co-founder, Screening Room & CEO,<span className="link ml-2 max-sm:ml-0 max-sm:w-[4.1rem]">Weta FX</span></p>
           </div>
         </div>
       </section>
 
+      {/* Our services section */}
         <section className="container mx-auto py-10 text-ui-black mt-[9rem] max-sm:mt-24 max-sm:px-6 max-sm:py-0 grid sm:grid-cols-2 lg:px-16 xl:px-64">
           <div>
             <h3 className="text-xl uppercase font-bold mb-9">our services</h3>
-            <div className="text-xl xl:text-[32px] xl:leading-tight">There&apos;s no ego or one size fits all approach. We embrace ambiguity and flexibility as a necessary step toward delivering outcomes for you.
+            <div className="text-xl xl:text-[32px] xl:leading-tight">There's no ego or one size fits all approach. We embrace ambiguity and flexibility as a necessary step toward delivering outcomes for you.
               <p className="my-14">We can help you:</p>
             </div>
           </div>
@@ -59,6 +60,7 @@ const Services = () => {
           </div>
         </section>
 
+        {/* Capabilities section */}
         <section className="bg-today text-ui-white mb-[530px] max-md:mb-[340px]">
           <div className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64 py-48 max-md:py-16">
             <div>

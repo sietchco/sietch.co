@@ -1,40 +1,38 @@
-import { useEffect } from "react"
+import { Helmet } from 'react-helmet'
 
-import Main from "@/layouts/Main"
+import img from '@/assets/img/case_study.png'
+import america from '@/assets/svg/svg-america.svg'
+import svg5 from '@/assets/svg/svgexport-5.svg'
 import Button from "@/components/ui/Button"
+import Main from "@/layouts/Main"
 import Counter from "@/utils/Counter"
 
-import svg5 from '@/assets/svg/svgexport-5.svg'
-import america from '@/assets/svg/svg-america.svg'
-import img from '@/assets/img/case_study.png'
-
 const Home = () => {
-
-  useEffect(() => {
-    document.title = "Sietch"
-  }, [])
-
   return (
     <Main>
+      <Helmet>
+      <title>Sietch · Software Factory</title>
+      </Helmet>
       <div className="bg-ui-white">
+        {/* hero section */}
         <header className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] h-full ">
           <div className="container mx-auto py-10 text-ui-black max-sm:px-6 max-sm:py-0 lg:px-16 xl:px-64">
             <section className="pt-24 pb-[60px] max-sm:pb-11">
               <h3 className="text-2xl pb-4 max-sm:text-lg text-ui-gray">Sietch is a product strategy and development company.</h3>
               <h1 className="md:text-[56px] font-bold leading-[1.2] max-sm:text-[33px] max-sm:pt-5 xl:w-[46rem]">We help  innovators achieve successful outcomes.</h1>
             </section>
-            <div className="-z-0">
+            <div className="-z-0 md:mb-">
               <Button>SERVICES</Button>
             </div>
             <div className="text-right max-sm:pt-16 pb-20 max-sm:pb-28">
-              <p className="font-semibold max-sm:text-xl md:pt-32 text-2xl">&quot;Sietch is not an agency. They’re entrepreneurs like we are.&quot;</p>
+              <p className="font-semibold max-sm:text-xl md:pt-32 text-2xl">"Sietch is not an agency. They’re entrepreneurs like we are."</p>
               <p className="pt-4 pb-5">—Paul Díaz, President, <span className="link">Sietch</span></p>
               <span className="font-extrabold ml-5 text-xl tracking-[-1.5px]">Sietch</span>
             </div>
           </div>
         </header>
 
-        {/* our story */}
+        {/* our story section*/}
         <section className="container mx-auto py-10 text-ui-black mt-[9rem] max-sm:mt-24 max-sm:px-6 max-sm:py-0 grid sm:grid-cols-2 lg:px-64">
           <div>
             <h3 className="text-xl uppercase font-bold mb-9">our story</h3>
@@ -44,6 +42,7 @@ const Home = () => {
           </div>
         </section>
 
+        {/* the problem section */}
         <section className="container mx-auto py-10 text-ui-black mt-[9rem] max-sm:mt-24 max-sm:px-6 max-sm:py-0 grid sm:grid-cols-2 lg:px-64 gap-10 mb-[12rem] xl:gap-40">  
           <div className="text-xl h-[32rem] xl:w-[32rem] flex items-center justify-center bg-gradient-to-b from-[#D8E6F566] to-[#F0F0F066] max-sm:mt-[9rem] max-sm:w-auto max-sm:h-[18rem] w-auto">
             <img src={svg5} />
@@ -54,6 +53,7 @@ const Home = () => {
           </div>
         </section>
 
+        {/* sietch message section with colorful bg */}
         <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f]">
           <div className="text-ui-black container mx-auto py-20 mt-[9rem] max-sm:mt-24 max-sm:px-6 lg:h-screen lg:w-screen md:flex md:flex-col md:justify-center">
           <h3 className="text-center text-2xl font-bold py-10">Sietch</h3>
@@ -62,7 +62,7 @@ const Home = () => {
           </div>
         </section>
 
-
+        {/* we the action section */}
         <section className="container mx-auto py-10 text-ui-black mt-[9rem] max-sm:mt-24 max-sm:px-6 max-sm:py-0 grid sm:grid-cols-2 lg:px-64 max-sm:pt-10 max-sm:pb-20 sm:gap-10 xl:gap-40 place-items-center md:pb-[10rem]">
           <img src={img} className="" />
           <div className="">
@@ -73,6 +73,7 @@ const Home = () => {
           </div>
         </section>
 
+        {/* today section with bg dark and numbers */}
         <section className="text-ui-white bg-today mb-[530px] max-md:mb-[340px]">
           <div className="container mx-auto py-40 max-sm:pb-28 lg:px-64 max-sm:px-6 xl:pt-64">
             <div className="grid grid-cols-2 place-items-center gap-72 relative max-md:gap-10 max-sm:grid-cols-1">
