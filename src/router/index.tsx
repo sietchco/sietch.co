@@ -3,8 +3,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Contact from '@/pages/Contact'
 import Home from '@/pages/Home'
 import Services from '@/pages/Services'
-import Work from '@/pages/Work'
 import Team from '@/pages/Team'
+import Work from '@/pages/Work'
 
 const browserRouter = createBrowserRouter([
   {
