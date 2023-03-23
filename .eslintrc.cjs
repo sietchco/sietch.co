@@ -32,5 +32,6 @@ module.exports = {
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
     '@typescript-eslint/ban-types': 'off',
+    'react/no-unescaped-entities': 'off'
   },
 }
