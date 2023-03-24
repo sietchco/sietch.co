@@ -3,6 +3,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        'numbers': ['Train One', 'cursive'],
+      },
       colors: {
         'ui-sand': '#F5E9CF',
         'ui-purple': '#4D455D',

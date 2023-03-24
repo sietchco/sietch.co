@@ -1,15 +1,23 @@
-import { PropsWithChildren } from 'react'
+import clsx from 'clsx'
+import { PropsWithChildren, useState } from 'react'
 
+import Footer from '@/components/common/Footer'
 import Navigation from '@/components/common/Navigation'
 
 type MainProps = PropsWithChildren<{}>
 
 const Main = (props: MainProps) => {
   const { children } = props
+  const [ navbar, setNavbar ] = useState(false)
+  const childrenWrapperclasses = clsx(
+    navbar && 'scale-[0.5] z-30 top-0 left-0 fixed bg-white'
+  )
+
   return (
     <div>
-      <Navigation />
-      <div>{children}</div>
+      <Navigation navbar={navbar} setNavbar={setNavbar} />
+      <main className={childrenWrapperclasses}>{children}</main>
+      <Footer />
     </div>
   )
 }
