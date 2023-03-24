@@ -33,7 +33,8 @@ const Home = () => {
         </header>
 
         {/* our story section*/}
-        <section className="container mx-auto py-10 text-ui-black mt-[9rem] max-sm:mt-24 max-sm:px-6 max-sm:py-0 grid sm:grid-cols-2 lg:px-64">
+        <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
+          py-10 text-ui-black mt-[9rem] max-sm:mt-20 max-sm:py-0 grid sm:grid-cols-2">
           <div>
             <h3 className="text-xl uppercase font-bold mb-9">our story</h3>
             <div className="text-xl xl:text-[32px] xl:leading-tight">Able was founded in 2023 by Paul Díaz, a software engineer and entrepreneur, and Ericka Castillo, a venture investor, on the premise that
@@ -43,27 +44,30 @@ const Home = () => {
         </section>
 
         {/* the problem section */}
-        <section className="container mx-auto py-10 text-ui-black mt-[9rem] max-sm:mt-24 max-sm:px-6 max-sm:py-0 grid sm:grid-cols-2 lg:px-64 gap-10 mb-[12rem] xl:gap-40">  
-          <div className="text-xl h-[32rem] xl:w-[32rem] flex items-center justify-center bg-gradient-to-b from-[#D8E6F566] to-[#F0F0F066] max-sm:mt-[9rem] max-sm:w-auto max-sm:h-[18rem] w-auto">
+        <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
+        py-10 text-ui-black mt-[9rem] max-sm:mt-24 max-sm:py-0 grid sm:grid-cols-2 gap-10 mb-[12rem] xl:gap-40">  
+          <div className="text-xl h-[32rem] xl:w-[32rem] flex items-center justify-center bg-gradient-to-b from-[#D8E6F566] to-[#F0F0F066] max-sm:mt-[4rem] max-sm:w-auto max-sm:h-[18rem] w-auto">
             <img src={svg5} />
           </div>
-          <div className="flex flex-col justify-center max-sm:py-4">
+          <div className="flex flex-col justify-center max-sm:py-0">
             <h3 className="uppercase font-bold text-xl py-6">the problem</h3>
             <p className="text-3xl max-sm:text-xl">Agencies have unstable teams and unexpected costs</p>
           </div>
         </section>
 
         {/* sietch message section with colorful bg */}
-        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f]">
-          <div className="text-ui-black container mx-auto py-20 mt-[9rem] max-sm:mt-24 max-sm:px-6 lg:h-screen lg:w-screen md:flex md:flex-col md:justify-center">
+        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] text-ui-black ">
+          <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
+          py-20 mt-[9rem] max-sm:mt-24 lg:h-screen lg:w-screen md:flex md:flex-col md:justify-center">
           <h3 className="text-center text-2xl font-bold py-10">Sietch</h3>
-          <h2 className="text-4xl text-center lg:text-6xl xl:mx-[20rem]">A new model to help ambitious innovators realize their vision</h2>
-          <p className="text-center text-xl py-10 xl:mx-[28rem]">Our dedicated, startup caliber teams work hand-in-hand with our partners to deliver their business goals.</p>
+          <h2 className="text-4xl text-center lg:text-6xl">A new model to help ambitious innovators realize their vision</h2>
+          <p className="text-center text-xl py-10">Our dedicated, startup caliber teams work hand-in-hand with our partners to deliver their business goals.</p>
           </div>
         </section>
 
         {/* we the action section */}
-        <section className="container mx-auto py-10 text-ui-black mt-[9rem] max-sm:mt-24 max-sm:px-6 max-sm:py-0 grid sm:grid-cols-2 lg:px-64 max-sm:pt-10 max-sm:pb-20 sm:gap-10 xl:gap-40 place-items-center md:pb-[10rem]">
+        <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
+        text-ui-black mt-[9rem] max-md:mt-24 grid sm:grid-cols-2 max-md:pt-10 max-md:pb-20 sm:gap-10 xl:gap-40 place-items-center md:pb-[10rem]">
           <img src={img} className="" />
           <div className="">
             <h3 className="order-last text-xl uppercase font-bold mb-9 max-md:mt-10">we the action</h3>
@@ -75,11 +79,11 @@ const Home = () => {
 
         {/* today section with bg dark and numbers */}
         <section className="text-ui-white bg-today mb-[530px] max-md:mb-[340px]">
-          <div className="container mx-auto py-40 max-sm:pb-28 lg:px-64 max-sm:px-6 xl:pt-64">
-            <div className="grid grid-cols-2 place-items-center gap-72 relative max-md:gap-10 max-sm:grid-cols-1">
+          <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 py-40 max-sm:pb-28 xl:pt-64 overflow-hidden">
+            <div className="grid grid-cols-2 place-items-center gap-72 relative max-lg:gap-10 max-sm:grid-cols-1 ">
               <div className="z-10">
                 <h3 className="text-xl font-bold uppercase">today</h3>
-                <div className="text-3xl my-12 max-md:text-2xl max-sm:text-[20px] max-sm:mr-[5rem] max-sm:my-10">We&apos;re a distributed team of talented builders united and inspired by the impact of our work.</div>
+                <div className="text-3xl my-12 max-md:text-2xl max-md:text-[20px]  max-sm:mr-[13rem] max-sm:my-10">We're a distributed team of talented builders united and inspired by the impact of our work.</div>
                 <Button>OUR TEAM</Button>
               </div>
               <div className="absolute -z-0 -right-32 -top-40 max-lg:-right-24 lg:-right-40 md:-right-0 sm:right-0 max-sm:-right-6 max-sm:-top-10">

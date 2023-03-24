@@ -15,7 +15,7 @@ const Team = () => {
       {/* hero section our team */}
       <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f]">
         <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
-          pt-48 pb-52 max-md:pt-24 max-md:pb-36">
+          pt-16 pb-52 max-md:pt-3 max-md:pb-36">
         <h3 className="text-center text-xl font-bold py-10 uppercase">our team</h3>
           <div className="">
             <p className="text-[2.5rem] font-bold max-md:text-[1.5rem]">
