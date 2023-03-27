@@ -22,8 +22,8 @@
 
 .button::before {
   position: absolute;
-  content: "";
-  background: linear-gradient(252.9deg, #E4F1FF 6.3%, #EDEFFF 30.06%, #FFFFFF 83.61%);
+  content: '';
+  background: linear-gradient(252.9deg, #e4f1ff 6.3%, #edefff 30.06%, #ffffff 83.61%);
   width: 250px;
   height: 100px;
   z-index: -1;
@@ -31,7 +31,7 @@
 
 .button:before {
   left: 100%;
-  transition: .5s all;
+  transition: 0.5s all;
 }
 
 .button:hover::before {
@@ -49,13 +49,13 @@
 }
 
 .nav-icon span {
-  background-color: #1A120B;
+  background-color: #1a120b;
   position: absolute;
   border-radius: 2px;
-  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   width: 100%;
   height: 2px;
-  transition-duration: 500ms
+  transition-duration: 500ms;
 }
 
 .nav-icon span:nth-child(1) {
@@ -77,18 +77,18 @@
 .nav-icon.open span:nth-child(1) {
   transform: rotate(45deg);
   top: 13px;
-  background-color: #FEFBF6;
+  background-color: #fefbf6;
 }
 
 .nav-icon.open span:nth-child(2) {
   opacity: 0;
-  background-color: #FEFBF6;
+  background-color: #fefbf6;
 }
 
 .nav-icon.open span:nth-child(3) {
   transform: rotate(-45deg);
   top: 13px;
-  background-color: #FEFBF6;
+  background-color: #fefbf6;
 }
 
 /* SIDEBAR ligth underline*/
@@ -98,7 +98,7 @@
 }
 
 .sb-underline::after {
-  content: "";
+  content: '';
   position: absolute;
   margin-bottom: -5px;
   left: 0;
@@ -123,13 +123,13 @@
 }
 
 .white-underline::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: #FEFBF6;
+  background-color: #fefbf6;
 
   transform: scaleX(1);
   transform-origin: left;
@@ -148,13 +148,13 @@
 }
 
 .link::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: #1A120B;
+  background-color: #1a120b;
 
   transform: scaleX(1);
   transform-origin: left;
