@@ -16,7 +16,7 @@ const Home = () => {
       <div className="bg-ui-white">
         {/* hero section */}
         <header className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] h-full ">
-          <div className="container mx-auto py-10 text-ui-black max-sm:px-6 max-sm:py-0 lg:px-16 xl:px-64">
+          <div className="container mx-auto py-10 text-ui-black max-sm:px-6 max-sm:pb-0 max-sm:pt-16 lg:px-16 xl:px-64">
             <section className="pt-10 pb-[60px] max-sm:pb-11">
               <h3 className="text-2xl pb-4 max-sm:text-lg text-ui-gray">
                 Sietch es un compañero digital.
@@ -26,13 +26,13 @@ const Home = () => {
                 nuestras.
               </h1>
             </section>
-            <div className="flex justify-start">
+            <div className="flex justify-start max-md:pb-20">
               <Link to="/services">
                 <Button>SERVICES</Button>
               </Link>
             </div>
-            <div className="text-right max-sm:pt-16 pb-20 max-sm:pb-28">
-              <p className="font-semibold max-sm:text-xl md:pt-32 text-2xl">
+            <div className="text-right pb-20 max-sm:pb-28">
+              <p className="font-semibold max-sm:text-xl md:pt-24 text-2xl md:ml-72">
                 “Sietch no es una agencia, siempre están buscando emprender, como nosotros, y eso es
                 difícil de encontrar”
               </p>
