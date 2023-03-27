@@ -91,6 +91,7 @@ const Team = () => {
         </section>
 
         <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 my-40 max-md:my-20">
+
           <div className="flex items-center">
             <img src={logo} alt="" className="mr-7 h-20" />
             <div className="text-xl">
