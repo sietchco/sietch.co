@@ -1,12 +1,7 @@
 import { Helmet } from 'react-helmet'
 
-import img from '@/assets/img/case_study.png'
-import family from '@/assets/img/case-study.png'
-import codeable from '@/assets/img/codeable.jpeg'
-import imac from '@/assets/img/imac.png'
-import airtime from '@/assets/svg/airtime.svg'
-import caring from '@/assets/svg/caring.svg'
-import pici from '@/assets/svg/pici.svg'
+import img from '@/assets/img/image.png'
+import logo from '@/assets/img/sietch-logo.png'
 import Button from '@/components/ui/Button'
 import Main from '@/layouts/Main'
 import Counter from '@/utils/Counter'
@@ -25,7 +20,7 @@ const Work = () => {
         pt-16 pb-52 max-md:pt-3 max-md:pb-36"
           >
             <h3 className="text-center text-xl font-bold py-10">OUR WORK</h3>
-            <div className="">
+            <div>
               <p className="text-[2.5rem] font-bold max-md:text-3xl">
                 "This partnership has led to a lot of positive change in the country over the past
                 five years"
@@ -43,7 +38,7 @@ const Work = () => {
           className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64
       grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28"
         >
-          <img src={img} className="" />
+          <img src={img} />
 
           <div>
             <h3 className="order-last text-xl uppercase font-bold mb-9 max-md:mt-10">
@@ -76,14 +71,14 @@ const Work = () => {
             <Button>VIEW CASE STUDY</Button>
           </div>
 
-          <img src={family} className="max-md:pt-14" />
+          <img src={img} className="max-md:pt-14" />
         </section>
 
         <section
           className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64
       grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28"
         >
-          <img src={imac} />
+          <img src={img} />
 
           <div>
             <h3 className="order-last text-xl uppercase font-bold mb-9 max-md:mt-10">
@@ -105,7 +100,7 @@ const Work = () => {
         pt-48 pb-52 max-md:pt-24 max-md:pb-36"
           >
             <div>
-              <h3 className="text-center text-xl font-bold py-10 uppercase">OUR partners</h3>
+              <h3 className="text-center text-xl font-bold py-10 uppercase">our partners</h3>
               <p className="text-[2.3rem] text-center max-md:text-2xl">
                 We pride ourselves on long team strategic relationships, and prefer to call our
                 clients partners.
@@ -113,16 +108,16 @@ const Work = () => {
             </div>
 
             <div className="grid grid-cols-3 item gap-10 text-center max-md:grid-cols-2 mt-72 max-md:mt-28">
-              <div className="grid place-items-center place-content-start text-[1.2rem]">
-                <img src={airtime} alt="airtime" className="h-16" />
+              <div className="grid place-items-center text-[1.2rem] place-content-start max-md:place-content-center">
+                <img src={logo} alt="airtime" className="h-16" />
                 <span className="my-10 mx-8 max-md:hidden">
                   We've partnered with Airtime since 2019 to explore the possibilities of their
                   platform through software prototypes and strategic thinking.
                 </span>
               </div>
 
-              <div className="grid place-items-center text-[1.2rem]">
-                <img src={pici} alt="pici" className="h-16" />
+              <div className="grid place-items-center text-[1.2rem] place-content-start max-md:place-content-center">
+                <img src={logo} alt="pici" className="h-16" />
                 <span className="my-10 mx-8 max-md:hidden">
                   PICIs Members Center was launched in 2017 to enhance collaboration amongst the
                   world's foremost researchers in cancer immunotherapy.
@@ -130,7 +125,7 @@ const Work = () => {
               </div>
 
               <div className="grid place-items-center place-content-start text-[1.2rem] max-md:place-content-center">
-                <img src={caring} alt="caring" className="h-16 max-md:mt-16 " />
+                <img src={logo} alt="caring" className="h-16 max-md:mt-16 " />
                 <span className="my-10 mx-8 max-md:hidden">
                   Caring.com and Sietch have partnered to completely reimagine the way people make
                   difficult senior care decisions.
@@ -152,12 +147,12 @@ const Work = () => {
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-40 max-md:gap-32 text-center">
-                <div className="text-8xl grid place-items-center max-md:text-6xl font-numbers">
+                <div className="text-8xl grid place-items-center max-md:text-6xl font-numbers max-md:mt-10">
                   <Counter from={0} to={12} />
                   <span className="text-base mt-6 font-sans">Internal tools built</span>
                 </div>
 
-                <div className="text-8xl grid place-items-center max-md:text-6xl font-numbers">
+                <div className="text-8xl grid place-items-center max-md:text-6xl font-numbers max-md:mt-10">
                   <Counter from={0} to={8} />
                   <span className="text-base mt-6 font-sans">Product tested</span>
                 </div>
@@ -173,7 +168,7 @@ const Work = () => {
                 </div>
                 <Button>VISIT CODEABLE</Button>
               </div>
-              <img src={codeable} className="max-md:pt-14" />
+              <img src={img} className="max-md:pt-14 max-md:pb-10" />
             </div>
           </div>
         </section>

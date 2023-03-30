@@ -14,33 +14,32 @@
 }
 
 /* Button hover styles */
-button {
+.button {
   overflow: hidden;
   z-index: 1;
   position: relative;
 }
 
-button::before {
+.button::before {
   position: absolute;
   content: '';
-  /* background-image: linear-gradient(to left, #E4F1FF 0%, rgb(254 251 246) 100%); */
   background: linear-gradient(252.9deg, #e4f1ff 6.3%, #edefff 30.06%, #ffffff 83.61%);
   width: 250px;
   height: 100px;
   z-index: -1;
 }
 
-button:before {
+.button:before {
   left: 100%;
   transition: 0.5s all;
 }
 
-button:hover::before {
+.button:hover::before {
   top: -30px;
   left: -0px;
 }
 
-/* burguer btn */
+/* burger btn */
 .nav-icon {
   width: 25px;
   height: 25px;
@@ -48,6 +47,7 @@ button:hover::before {
   cursor: pointer;
   display: inline-block;
 }
+
 .nav-icon span {
   background-color: #1a120b;
   position: absolute;
@@ -57,15 +57,18 @@ button:hover::before {
   height: 2px;
   transition-duration: 500ms;
 }
+
 .nav-icon span:nth-child(1) {
   top: 0px;
   left: 0px;
 }
+
 .nav-icon span:nth-child(2) {
   top: 12px;
   left: 0px;
   opacity: 1;
 }
+
 .nav-icon span:nth-child(3) {
   bottom: 0px;
   left: 0px;
@@ -76,25 +79,28 @@ button:hover::before {
   top: 13px;
   background-color: #fefbf6;
 }
+
 .nav-icon.open span:nth-child(2) {
   opacity: 0;
   background-color: #fefbf6;
 }
+
 .nav-icon.open span:nth-child(3) {
   transform: rotate(-45deg);
   top: 13px;
   background-color: #fefbf6;
 }
 
-/* underline hover animation */
-a {
+/* SIDEBAR ligth underline*/
+.sb-underline {
   position: relative;
   padding: 1.5px 0;
 }
-a::after {
+
+.sb-underline::after {
   content: '';
   position: absolute;
-  /* margin-bottom: -5px; */
+  margin-bottom: -5px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -105,15 +111,18 @@ a::after {
   transform-origin: left;
   transition: transform 250ms ease-in;
 }
-a:hover::after {
+
+.sb-underline:hover::after {
   transform: scaleX(1);
 }
-/* linkedin */
-.linkedin {
+
+/* light underline used in Linkedin inside Sidebar  */
+.white-underline {
   position: relative;
   padding: 2px 0;
 }
-.linkedin::after {
+
+.white-underline::after {
   content: '';
   position: absolute;
   left: 0;
@@ -126,15 +135,18 @@ a:hover::after {
   transform-origin: left;
   transition: transform 250ms ease-in;
 }
-.linkedin:hover::after {
+
+.white-underline:hover::after {
   transform: scaleX(0);
 }
-/* link */
+
+/* Dark underline  */
 .link {
   position: relative;
   padding: 2px 0;
   cursor: pointer;
 }
+
 .link::after {
   content: '';
   position: absolute;
@@ -148,6 +160,7 @@ a:hover::after {
   transform-origin: left;
   transition: transform 250ms ease-in;
 }
+
 .link:hover::after {
   transform: scaleX(0);
 }
@@ -158,7 +171,4 @@ a:hover::after {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-select {
 }

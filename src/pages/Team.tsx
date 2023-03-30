@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet'
 
-import one2 from '@/assets/img/one2.jpeg'
-import lunch from '@/assets/svg/lunch.svg'
+import img from '@/assets/img/image.png'
+import logo from '@/assets/img/sietch-logo.png'
 import Main from '@/layouts/Main'
 import Counter from '@/utils/Counter'
 
@@ -38,7 +38,7 @@ const Team = () => {
           </h2>
 
           <div className="grid grid-cols-2 gap-32 place-items-center mb-36 max-md:grid-cols-1 max-md:gap-1 max-md:mb-24">
-            <img src={one2} alt="" title="" decoding="async" />
+            <img src={img} alt="" title="" decoding="async" />
             <div>
               <h3 className="text-xl font-bold my-10 max-md:text-xl">ONE SIETCH</h3>
               <div className="text-3xl max-md:text-xl">
@@ -80,7 +80,7 @@ const Team = () => {
               </p>
             </div>
           </div>
-          <img src={one2} alt="" />
+          <img src={img} alt="" />
           <div>
             <h3 className="text-xl font-bold my-10 max-md:text-xl">PERKS</h3>
             <div className="text-3xl max-md:text-xl">
@@ -91,8 +91,9 @@ const Team = () => {
         </section>
 
         <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 my-40 max-md:my-20">
-          <div className="flex">
-            <img src={lunch} alt="" className="mr-7" />
+
+          <div className="flex items-center">
+            <img src={logo} alt="" className="mr-7 h-20" />
             <div className="text-xl">
               <h3 className="font-bold my-4">Remote first.</h3>
               <p>
@@ -102,16 +103,16 @@ const Team = () => {
             </div>
           </div>
 
-          <div className="flex my-10 max-md:my-6">
-            <img src={lunch} alt="" className="mr-7" />
+          <div className="flex my-10 max-md:my-6 items-center">
+            <img src={logo} alt="" className="mr-7 h-20" />
             <div className="text-xl">
               <h3 className="font-bold my-4">No timesheets.</h3>
               <p>WWe’ve yet to meet someone who misses them.</p>
             </div>
           </div>
 
-          <div className="flex">
-            <img src={lunch} alt="" className="mr-7" />
+          <div className="flex items-center">
+            <img src={logo} alt="" className="mr-7 h-20" />
             <div className="text-xl">
               <h3 className="font-bold my-4">Employee development and lunch stipends.</h3>
               <p>
@@ -173,23 +174,23 @@ const Team = () => {
             </div>
             <div className="grid grid-cols-4 gap-28 mt-28 max-md:grid-cols-2 max-md:gap-16 max-md:mt-24">
               <div>
-                <img src={one2} />
-                <h3 className="mt-8 mb-2 font-bold">Mike Potter</h3>
+                <img src={img} />
+                <h3 className="mt-8 mb-2 font-bold">Paul Díaz</h3>
                 <span>Founder</span>
               </div>
               <div>
-                <img src={one2} />
-                <h3 className="mt-8 mb-2 font-bold">Mike Potter</h3>
+                <img src={img} />
+                <h3 className="mt-8 mb-2 font-bold">Paul Díaz</h3>
                 <span>Founder</span>
               </div>
               <div>
-                <img src={one2} />
-                <h3 className="mt-8 mb-2 font-bold">Mike Potter</h3>
+                <img src={img} />
+                <h3 className="mt-8 mb-2 font-bold">Paul Díaz</h3>
                 <span>Founder</span>
               </div>
               <div>
-                <img src={one2} />
-                <h3 className="mt-8 mb-2 font-bold">Mike Potter</h3>
+                <img src={img} />
+                <h3 className="mt-8 mb-2 font-bold">Paul Díaz</h3>
                 <span>Founder</span>
               </div>
             </div>

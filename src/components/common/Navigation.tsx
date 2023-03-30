@@ -31,45 +31,49 @@ const Navigation = (props: NavigationProps) => {
   }
 
   const linksWrapperClasses = clsx(
-    'uppercase absolute top-[-60px] md:relative md:top-0 align-middle text-ui-black',
+    'uppercase max-md:absolute max-md:top-[-150px] md:top-0 align-middle text-ui-black py-12 px-10',
     navbar &&
-      'capitalize fixed flex flex-col flex-nowrap top-[0] right-0 pl-10 pt-[23vh] text-6xl bg-ui-black text-ui-white h-screen w-screen md:bg-inherit md:text-inherit md:flex-row md:text-base md:uppercase md:static md:h-0 md:p-0 md:flex md:items-center md:justify-end z-0',
+      'capitalize fixed flex flex-col flex-nowrap max-md:top-[0] max-md:right-0 max-md:pl-10 max-md:pt-[23vh] text-6xl bg-ui-black text-ui-white h-screen w-screen md:flex md:items-end md:pr-[10vw] md:justify-center md:pt-0 max-md:top-0',
   )
 
-  const sidebarClasses = clsx(navbar ? 'text-base pl-6 pt-16 md:hidden' : 'hidden')
+  const sidebarClasses = clsx(navbar ? 'text-base pl-6 pt-16 md:text-white' : 'hidden')
   const burgerBtnClasses = clsx(
-    'flex fixed right-6 text-ui-black transition-opacity',
-    showMenu ? 'opacity-100' : 'opacity-0',
-    navbar && 'text-ui-white z-10 mr-3',
+    'flex fixed max-md:right-5 right-11 max-sm:top-8 top-12 text-ui-black',
+    showMenu ? '' : 'md:opacity-0 md:z-[-50]',
+    navbar && 'max-md:mr-4 text-ui-white md:opacity-100 md:z-[50] md:mr-4',
+  )
+  const showHomeLink = clsx(
+    'ml-10 max-md:ml-5 my-2 max-md:w-40 sb-underline',
+    navbar ? '' : 'hidden',
   )
 
   return (
-    <div className="bg-gradient-to-b from-[#D8E6F566] to-[#D8E6F566]">
-      <nav className="flex justify-between container m-auto py-10 items-center max-sm:py-5 bg-fixed">
+    <div className="bg-gradient-to-b from-[#EEF3F6] to-[#EEF3F6]">
+      <nav className="flex justify-between items-center z-50">
         <Link to="/" className="flex items-center">
-          <img src={logoSietch} alt="SietchLogo" className="h-10 max-sm:ml-8" />
+          <img src={logoSietch} alt="SietchLogo" className="h-10 max-md:mt-6 ml-12 max-md:ml-5" />
         </Link>
 
         <div className={linksWrapperClasses}>
-          <Link to="/" className="mx-5 max-md:my-2 md:hidden max-md:w-40">
+          <Link to="/" className={showHomeLink}>
             home
           </Link>
-          <Link to="/work" className="mx-5 max-md:my-2 max-md:w-36">
+          <Link to="/work" className="ml-10 max-md:ml-5 my-2 max-md:w-36 sb-underline">
             work
           </Link>
-          <Link to="/services" className="mx-5 max-md:my-2 max-md:w-52">
+          <Link to="/services" className="ml-20 max-md:ml-5 my-2 max-md:w-52 sb-underline">
             services
           </Link>
-          <Link to="/team" className="mx-5 max-md:my-2 max-md:w-36">
+          <Link to="/team" className="ml-20 max-md:ml-5 my-2 max-md:w-36 sb-underline">
             team
           </Link>
-          <Link to="/contact" className="mx-5 max-md:my-2 max-md:w-52">
+          <Link to="/contact" className="ml-20 max-md:ml-5 my-2 max-md:w-52 sb-underline">
             contact
           </Link>
           <div className={sidebarClasses}>
             <span className="mr-10 font-bold text-xl tracking-[-1px]">Sietch</span>
-            <span className="mr-10 cursor-pointer linkedin">Linkedin</span>
-            <span className="mr-10">© 2023</span>
+            <span className="mr-10 cursor-pointer white-underline">Linkedin</span>
+            <span>© 2023</span>
           </div>
         </div>
 

@@ -1,4 +1,3 @@
-// import { useState } from "react"
 import { Helmet } from 'react-helmet'
 import { useForm } from 'react-hook-form'
 
@@ -106,7 +105,7 @@ const Contact = () => {
               <div className="pb-4">
                 <textarea
                   required
-                  className="bg-zinc-100  w-full"
+                  className="bg-zinc-100 w-full"
                   cols={20}
                   rows={3}
                   {...register('message', {
@@ -117,7 +116,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="h-16 w-28 border border-solid border-black font-semibold"
+                className="h-16 w-28 border border-solid border-black font-semibold button"
               >
                 SEND
               </button>

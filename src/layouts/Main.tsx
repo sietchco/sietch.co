@@ -9,7 +9,10 @@ type MainProps = PropsWithChildren<{}>
 const Main = (props: MainProps) => {
   const { children } = props
   const [navbar, setNavbar] = useState(false)
-  const childrenWrapperclasses = clsx(navbar && 'scale-[0.5] z-30 top-0 left-0 fixed bg-white')
+  const childrenWrapperclasses = clsx(
+    navbar &&
+      'max-md:scale-0 scale-[0.4] z-30 top-0 -left-40 fixed bg-white w-screen h-screen overflow-hidden',
+  )
 
   return (
     <div>

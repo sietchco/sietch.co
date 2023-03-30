@@ -9,7 +9,7 @@ type ButtonProps = {
 const Button = (props: ButtonProps) => {
   const { children, showArrow = true } = props
   return (
-    <button className="py-4 px-7 border border-slate-600 flex items-center font-semibold">
+    <button className="py-4 px-7 border border-slate-600 flex items-center font-semibold button">
       {children}
       {showArrow && <SvgArrow className="ml-4" />}
     </button>

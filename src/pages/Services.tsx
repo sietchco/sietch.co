@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet'
 
-import img from '@/assets/svg/pici.svg'
+import logo from '@/assets/img/sietch-logo.png'
 import Main from '@/layouts/Main'
 
 const Services = () => {
@@ -46,7 +46,7 @@ const Services = () => {
         grid grid-cols-3 gap-20 text-[18px] mt-16 mb-40 max-md:grid-cols-1"
         >
           <div>
-            <img src={img} alt="" className="my-5 max-md:my-0" />
+            <img src={logo} alt="" className="my-5 max-md:my-0 h-20" />
             <h3 className="font-bold my-7 max-md:mt-16">Launch your product</h3>
             <div>
               Our Product Teams will help you focus on the right priorities, ensure you build the
@@ -57,7 +57,7 @@ const Services = () => {
           </div>
 
           <div>
-            <img src={img} alt="" className="my-5 max-md:my-16" />
+            <img src={logo} alt="" className="my-5 max-md:my-2 h-20" />
             <h3 className="font-bold my-7">Innovate your organization</h3>
             <div>
               We can help your product and company continually respond to rapidly evolving business
@@ -67,7 +67,7 @@ const Services = () => {
           </div>
 
           <div>
-            <img src={img} alt="" className="my-5 max-md:my-16" />
+            <img src={logo} alt="" className="my-5 max-md:my-2 h-20" />
             <h3 className="font-bold my-7">Scale your engineering</h3>
             <div>
               Our full-stack managed engineering teams are capable of tackling your most critical

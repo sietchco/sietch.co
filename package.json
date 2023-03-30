@@ -7,14 +7,14 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\"",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,md}\" --config ./.prettierrc",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
+    "src/**/*.{css,ts,tsx}": [
       "yarn lint",
       "yarn format"
     ]

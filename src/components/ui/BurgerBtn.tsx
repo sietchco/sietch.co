@@ -1,14 +1,14 @@
 import clsx from 'clsx'
 
-type BurguerBtnProps = {
+type BurgerBtnProps = {
   navbar: boolean
   toggleNavbar: () => void
 }
 
-const BurguerBtn = ({ toggleNavbar, navbar }: BurguerBtnProps) => {
-  const burguerClasses = clsx('nav-icon', navbar && 'open')
+const BurgerBtn = ({ toggleNavbar, navbar }: BurgerBtnProps) => {
+  const burgerClasses = clsx('nav-icon', navbar && 'open')
   return (
-    <div onClick={toggleNavbar} className={burguerClasses}>
+    <div onClick={toggleNavbar} className={burgerClasses}>
       <span></span>
       <span></span>
       <span></span>
@@ -16,4 +16,4 @@ const BurguerBtn = ({ toggleNavbar, navbar }: BurguerBtnProps) => {
   )
 }
 
-export default BurguerBtn
+export default BurgerBtn
