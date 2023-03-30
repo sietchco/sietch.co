@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 
@@ -6,8 +8,13 @@ import america from '@/assets/svg/svg-america.svg'
 import Button from '@/components/ui/Button'
 import Main from '@/layouts/Main'
 import Counter from '@/utils/Counter'
+import { Animations } from '@/variants/animations'
+
+import Parallax from './Parallax'
 
 const Home = () => {
+  const [showImage, setShowImage] = useState<boolean>(false)
+
   return (
     <Main>
       <Helmet>
@@ -64,16 +71,12 @@ const Home = () => {
 
         {/* the problem section */}
         <section
-          className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
-        text-ui-black mt-[9rem] max-md:mt-24 grid sm:grid-cols-2 max-md:pt-10 max-md:pb-0 sm:gap-10 xl:gap-40 place-items-center md:pb-[10rem]"
-        >
-          <img src={img} />
-          <div>
-            <h3 className="text-xl uppercase font-bold mb-9 max-md:mt-10">the problem</h3>
-            <div className="text-3xl xl:leading-tight max-sm:pb-14 max-sm:text-xl">
-              Agencies have unstable teams and unexpected costs.
+          className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64">
+          {[1,2,3].map((index) => (
+            <div key={index} className=''>
+              <Parallax />
             </div>
-          </div>
+          ))}
         </section>
 
         {/* sietch message section with colorful bg */}
@@ -112,6 +115,11 @@ const Home = () => {
 
         {/* today section with bg dark and numbers */}
         <section className="text-ui-white bg-today mb-[530px] max-md:mb-[340px]">
+          <motion.div
+          initial={{height: "100%",}}
+          animate={{height: "0%", transition: {ease: [0.455, 0.03, 0.515, 0.955], duration: 1.5}}}
+          onAnimationComplete={() => setShowImage(true)}
+          className='absolute bg-black h-full w-full'></motion.div>
           <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 py-40 max-sm:pb-28 xl:pt-64 overflow-hidden">
             <div className="grid grid-cols-2 place-items-center gap-72 relative max-lg:gap-10 max-sm:grid-cols-1 ">
               <div className="z-10">
@@ -120,11 +128,17 @@ const Home = () => {
                   We're a distributed team of talented builders united and inspired by the impact of
                   our work.
                 </div>
+                <div className='hover:text-black w-[200px]'>
+
                 <Button>OUR TEAM</Button>
+                </div>
               </div>
-              <div className="absolute -z-0 -right-32 -top-40 max-lg:-right-24 lg:-right-40 md:-right-0 sm:right-0 max-sm:-right-6 max-sm:-top-10">
+              { showImage && 
+              <motion.div
+                variants={Animations.image}
+                className="absolute -z-0 -right-32 -top-40 max-lg:-right-24 lg:-right-40 md:-right-0 sm:right-0 max-sm:-right-6 max-sm:-top-10">
                 <img src={america} />
-              </div>
+              </motion.div> }
             </div>
 
             <div className="flex justify-between text-8xl pt-60 max-md:grid max-md:grid-cols-2 max-md:text-6xl max-md:pt-40">
