@@ -10,7 +10,7 @@ import Main from '@/layouts/Main'
 import Counter from '@/utils/Counter'
 import { Animations } from '@/variants/animations'
 
-import Parallax from './Parallax'
+import Parallax from '../utils/Parallax'
 
 const Home = () => {
   const [showImage, setShowImage] = useState<boolean>(false)
@@ -116,8 +116,7 @@ const Home = () => {
         {/* today section with bg dark and numbers */}
         <section className="text-ui-white bg-today mb-[530px] max-md:mb-[340px]">
           <motion.div
-          initial={{height: "100%",}}
-          animate={{height: "0%", transition: {ease: [0.455, 0.03, 0.515, 0.955], duration: 1.5}}}
+          variants={Animations.bgdark} initial='hidden' animate='visible'
           onAnimationComplete={() => setShowImage(true)}
           className='absolute bg-black h-full w-full'></motion.div>
           <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 py-40 max-sm:pb-28 xl:pt-64 overflow-hidden">

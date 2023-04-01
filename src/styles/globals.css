@@ -100,7 +100,7 @@
 .sb-underline::after {
   content: '';
   position: absolute;
-  margin-bottom: -5px;
+  margin-bottom: -2px;
   left: 0;
   bottom: 0;
   width: 100%;
