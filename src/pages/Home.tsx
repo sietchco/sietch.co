@@ -73,7 +73,7 @@ const Home = () => {
         <section
           className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64">
           {[1,2,3].map((index) => (
-            <div key={index} className=''>
+            <div key={index}>
               <Parallax />
             </div>
           ))}
@@ -128,8 +128,7 @@ const Home = () => {
                   our work.
                 </div>
                 <div className='hover:text-black w-[200px]'>
-
-                <Button>OUR TEAM</Button>
+                  <Button>OUR TEAM</Button>
                 </div>
               </div>
               { showImage && 

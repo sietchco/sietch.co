@@ -11,7 +11,7 @@ const Main = (props: MainProps) => {
   const [navbar, setNavbar] = useState(false)
   const childrenWrapperclasses = clsx(
     navbar &&
-      'max-md:scale-0 scale-[0.4] z-30 top-0 -left-40 fixed bg-white w-screen h-screen overflow-hidden snap-mandatory snap-y',
+      'max-md:scale-0 scale-[0.4] z-30 top-0 -left-40 fixed bg-white w-screen h-screen overflow-hidden',
   )
 
   return (
