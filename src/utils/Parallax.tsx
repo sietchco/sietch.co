@@ -1,4 +1,3 @@
-
 import { motion, MotionValue, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 
@@ -11,21 +10,25 @@ const useParallax = (value: MotionValue<number>, distance: number) => {
 const Parallax = () => {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref })
-  const y = useParallax(scrollYProgress, 600)
+  const y = useParallax(scrollYProgress, 200)
 
   return (
-    <section className="flex relative h-screen justify-center items-center max-md:flex-col overflow-hidden snap-center">
+    <section className="flex h-screen justify-center items-center max-md:flex-col overflow-hidden">
       <div
         ref={ref}
-        className="relative h-[400px] w-[400px] overflow-hidden max-h-[90vh] m-20 max-md:mt-[10rem] max-md:pt-[5rem] max-md:w-[350px]"
+        className="m-20 max-md:m-0 max-md:pt-10"
       >
-        <img src={img} className="w-full h-full absolute max-md:bottom-20 max-md:h-[300px]" />
+        <motion.img
+        initial={{ opacity: 0}}
+        whileInView={{ opacity: 1, transition: { duration: 2.5 } }}
+        src={img} />
       </div>
       <motion.div
-        initial={{ opacity: 0}}
-        whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
+        initial={{ opacity: 0, y: -50}}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+        exit={{ opacity:0, y: 50}}
         style={{ y }}
-        className="ml-10 max-md:ml-0 md:left-[35vw] max-md:pt-40"
+        className="max-md:pt-32"
       >
         <h2 className="text-xl uppercase font-bold m-0">the problem</h2>
         <div className="text-2xl">Agencies have unstable teams and unexpected costs</div>

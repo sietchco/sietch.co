@@ -14,7 +14,7 @@ const Work = () => {
       </Helmet>
       <div className="text-ui-black bg-white">
         {/* Our work section */}
-        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f]">
+        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] snap-center">
           <div
             className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
         pt-16 pb-52 max-md:pt-3 max-md:pb-36"
@@ -36,7 +36,7 @@ const Work = () => {
         {/* Cards section */}
         <section
           className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64
-      grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28"
+      grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28 snap-center"
         >
           <img src={img} />
 
@@ -55,7 +55,7 @@ const Work = () => {
 
         <section
           className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64
-      grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28"
+      grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28 snap-center"
         >
           <div>
             <h3 className="order-last text-xl uppercase font-bold mb-9 max-md:mt-10">
@@ -76,7 +76,7 @@ const Work = () => {
 
         <section
           className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64
-      grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28"
+      grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28 snap-center"
         >
           <img src={img} />
 
@@ -94,7 +94,7 @@ const Work = () => {
         </section>
 
         {/* Partners section*/}
-        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f]">
+        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] snap-center">
           <div
             className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
         pt-48 pb-52 max-md:pt-24 max-md:pb-36"
@@ -136,7 +136,7 @@ const Work = () => {
         </section>
 
         {/* last section with dark bg */}
-        <section className="text-ui-white bg-today mb-[530px] max-md:mb-[340px]">
+        <section className="text-ui-white bg-today mb-[530px] max-md:mb-[340px] snap-start">
           <div className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64 pt-10">
             <div className="grid grid-cols-2 my-40 place-items-center md:gap-20 lg:gap-32 max-sm:grid-cols-1 max-md:my-14">
               <div className="max-md:text-center">
@@ -168,7 +168,7 @@ const Work = () => {
                 </div>
                 <Button>VISIT CODEABLE</Button>
               </div>
-              <img src={img} className="max-md:pt-14 max-md:pb-10" />
+              <img src={img} className="max-md:pt-14 max-md:pb-10 max-md:snap-end" />
             </div>
           </div>
         </section>

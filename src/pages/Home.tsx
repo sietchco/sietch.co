@@ -22,9 +22,9 @@ const Home = () => {
       </Helmet>
       <div className="bg-ui-white">
         {/* hero section */}
-        <header className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] h-full ">
-          <div className="container mx-auto py-10 text-ui-black max-sm:px-6 max-sm:pb-0 max-sm:pt-16 lg:px-16 xl:px-64">
-            <section className="pt-10 pb-[60px] max-sm:pb-11">
+        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] h-full">
+          <header className="container mx-auto py-10 text-ui-black max-sm:px-6 max-sm:pb-0 lg:px-16 xl:px-64">
+            <div className="pt-10 pb-[60px] max-sm:pb-11 snap-center">
               <h3 className="text-2xl pb-4 max-sm:text-lg text-ui-gray">
                 Sietch es un compañero digital.
               </h3>
@@ -32,7 +32,7 @@ const Home = () => {
                 Te ayudamos a alcanzar tus objetivos tecnológicos, <br /> tus metas son las
                 nuestras.
               </h1>
-            </section>
+            </div>
             <div className="flex justify-start max-md:pb-20">
               <Link to="/services">
                 <Button>SERVICES</Button>
@@ -48,23 +48,21 @@ const Home = () => {
               </p>
               <span className="font-extrabold ml-5 text-xl tracking-[-1px]">ramirezlaw.com</span>
             </div>
-          </div>
-        </header>
+          </header>
+        </section>
 
         {/* our story section*/}
-        <section
-          className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
-          py-10 text-ui-black mt-[9rem] max-sm:mt-20 max-sm:py-0 grid sm:grid-cols-2"
-        >
-          <div>
-            <h3 className="text-xl uppercase font-bold mb-9">our story</h3>
+        <section>
+          <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
+          py-10 text-ui-black mt-[9rem] max-sm:mt-20 max-sm:py-0 snap-center grid md:grid-cols-2">
             <div className="text-xl xl:text-[32px] xl:leading-tight">
-              Sietch was founded in 2023 by Paul Díaz, a software engineer and entrepreneur, and
-              Ericka Castillo, a venture investor, on the premise that
-              <span className="font-bold ml-2">
+              <h3 className="text-xl uppercase font-bold mb-9">our story</h3>
+                Sietch was founded in 2023 by Paul Díaz, a software engineer and entrepreneur, and
+                Ericka Castillo, a venture investor, on the premise that
+              <strong className="ml-2">
                 entrepreneurs and philanthropists need a better services model for building
                 technology.
-              </span>
+              </strong>
             </div>
           </div>
         </section>
@@ -73,17 +71,17 @@ const Home = () => {
         <section
           className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64">
           {[1,2,3].map((index) => (
-            <div key={index} className=''>
-              <Parallax />
-            </div>
+            <section key={index} className='snap-center'>
+                <Parallax />
+            </section>
           ))}
         </section>
 
         {/* sietch message section with colorful bg */}
-        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] text-ui-black ">
+        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] snap-center">
           <div
-            className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
-          py-20 mt-[9rem] max-sm:mt-24 lg:h-screen lg:w-screen md:flex md:flex-col md:justify-center"
+            className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 
+          py-20 mt-[9rem] max-sm:mt-24 lg:h-screen lg:w-screen md:flex md:flex-col md:justify-center text-ui-black"
           >
             <h3 className="text-center text-2xl font-bold py-10">Sietch</h3>
             <h2 className="text-4xl text-center lg:text-6xl">
@@ -99,7 +97,7 @@ const Home = () => {
         {/* we the action section */}
         <section
           className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
-        text-ui-black mt-[9rem] max-md:mt-24 grid sm:grid-cols-2 max-md:pt-10 max-md:pb-20 sm:gap-10 xl:gap-40 place-items-center md:pb-[10rem]"
+        text-ui-black mt-[9rem] max-md:mt-24 grid sm:grid-cols-2 max-md:pt-10 max-md:pb-20 sm:gap-10 xl:gap-40 place-items-center md:pb-[10rem] snap-center"
         >
           <img src={img} />
           <div>
@@ -114,7 +112,7 @@ const Home = () => {
         </section>
 
         {/* today section with bg dark and numbers */}
-        <section className="text-ui-white bg-today mb-[530px] max-md:mb-[340px]">
+        <section className="text-ui-white bg-today mb-[530px] max-md:mb-[340px] snap-center">
           <motion.div
           variants={Animations.bgdark} initial='hidden' animate='visible'
           onAnimationComplete={() => setShowImage(true)}
@@ -128,8 +126,7 @@ const Home = () => {
                   our work.
                 </div>
                 <div className='hover:text-black w-[200px]'>
-
-                <Button>OUR TEAM</Button>
+                  <Button>OUR TEAM</Button>
                 </div>
               </div>
               { showImage && 

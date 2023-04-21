@@ -19,7 +19,9 @@ export const Animations = {
         },
         show: {
             y: "0%",
-            transition: {duration: 0.5 }
+            transition: {duration: 0.4 }
+        },
+        none:{
         }
     },
     // img animation

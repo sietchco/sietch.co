@@ -173,13 +173,7 @@
   background-repeat: no-repeat;
 }
 
-/*  */
-
-/* #snap{
-  scroll-snap-type: y mandatory !important;
-  overflow-y: scroll !important;
-} */
-/* html{
+html{
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-} */
+  scroll-behavior: smooth !important;
+}

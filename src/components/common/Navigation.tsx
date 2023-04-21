@@ -42,7 +42,7 @@ const Navigation = (props: NavigationProps) => {
   const burgerBtnClasses = clsx(
     'flex fixed max-md:right-5 right-11 max-sm:top-8 top-10 text-ui-black z-[200]',
     showMenu ? '' : 'md:opacity-0 md:z-[-50]',
-    navbar && 'max-md:mr-4 text-ui-white md:opacity-100 md:z-[50] md:mr-4',
+    navbar && 'text-ui-white md:opacity-100 md:z-[50] md:mr-4',
   )
   const showHomeLink = clsx(
     'max-md:ml-5 md:ml-20 max-md:w-40 list-none overflow-hidden',
