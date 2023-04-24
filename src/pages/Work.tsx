@@ -14,12 +14,12 @@ const Work = () => {
       </Helmet>
       <div className="text-ui-black bg-white">
         {/* Our work section */}
-        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] snap-center">
+        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] ">
           <div
             className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
-        pt-16 pb-52 max-md:pt-3 max-md:pb-36"
+        pt-16 pb-52 max-md:pt-3 max-md:pb-36 md:min-h-[90vh]"
           >
-            <h3 className="text-center text-xl font-bold py-10">OUR WORK</h3>
+            <h3 className="text-center text-xl font-bold py-10 snap-center">OUR WORK</h3>
             <div>
               <p className="text-[2.5rem] font-bold max-md:text-3xl">
                 "This partnership has led to a lot of positive change in the country over the past
@@ -40,16 +40,18 @@ const Work = () => {
         >
           <img src={img} />
 
-          <div>
-            <h3 className="order-last text-xl uppercase font-bold mb-9 max-md:mt-10">
-              PROTECTING CIVIL RIGHTS
-            </h3>
-            <div className="text-xl xl:leading-tight">
-              Since 2017, we've built and innovated a platform that has recruited over 42,000
-              lawyers interested in advocating for a more equitable, inclusive, and just society.
-            </div>
-            <p className="font-bold text-xl my-10">Impact: $112M in pro bono legal work enabled</p>
-            <Button>VIEW CASE STUDY</Button>
+          <div className='md:h-screen flex flex-col justify-center'>
+              <h3 className="text-xl uppercase font-bold mb-9 max-md:mt-10">
+                PROTECTING CIVIL RIGHTS
+              </h3>
+              <p className="text-xl xl:leading-tight">
+                Since 2017, we've built and innovated a platform that has recruited over 42,000
+                lawyers interested in advocating for a more equitable, inclusive, and just society.
+              </p>
+              <p className="font-bold text-xl my-10">Impact: $112M in pro bono legal work enabled</p>
+              <div>
+                <Button>VIEW CASE STUDY</Button>
+              </div>
           </div>
         </section>
 
@@ -57,21 +59,23 @@ const Work = () => {
           className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64
       grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28 snap-center"
         >
-          <div>
-            <h3 className="order-last text-xl uppercase font-bold mb-9 max-md:mt-10">
+          <div className='md:h-screen flex flex-col justify-center'>
+            <h3 className="text-xl uppercase font-bold mb-9">
               TAKING THE PAIN OUT OF MOVING
             </h3>
             <div className="text-xl xl:leading-tight">
               Updater is an invite-only moving app. We dramatically increased their conversions by
               launching native iOS and Android apps, and optimizing their onboarding flows.
             </div>
-            <p className="font-bold text-xl my-10">
+            <p className="font-bold text-xl mt-6 mb-9">
               Impact: 3x increase in TV and internet signup conversion rates
             </p>
-            <Button>VIEW CASE STUDY</Button>
+            <div>
+              <Button>VIEW CASE STUDY</Button>
+            </div>
           </div>
 
-          <img src={img} className="max-md:pt-14" />
+          <img src={img} className="max-md:pt-10" />
         </section>
 
         <section
@@ -80,8 +84,8 @@ const Work = () => {
         >
           <img src={img} />
 
-          <div>
-            <h3 className="order-last text-xl uppercase font-bold mb-9 max-md:mt-10">
+          <div className='md:h-screen flex flex-col justify-center'>
+            <h3 className="text-xl uppercase font-bold mb-9 max-md:mt-10">
               INNOVATING PUBLIC RADIO
             </h3>
             <div className="text-xl xl:leading-tight">
@@ -89,7 +93,9 @@ const Work = () => {
               internal workflows and deliver a better listener experience.
             </div>
             <p className="font-bold text-xl my-10">Impact: 75% reported workflow improvement</p>
-            <Button>VIEW CASE STUDY</Button>
+            <div>
+              <Button>VIEW CASE STUDY</Button>
+            </div>
           </div>
         </section>
 
@@ -97,7 +103,7 @@ const Work = () => {
         <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] snap-center">
           <div
             className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
-        pt-48 pb-52 max-md:pt-24 max-md:pb-36"
+        pt-32 max-md:pt-24 max-md:pb-36 h-screen"
           >
             <div>
               <h3 className="text-center text-xl font-bold py-10 uppercase">our partners</h3>
@@ -107,7 +113,7 @@ const Work = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-3 item gap-10 text-center max-md:grid-cols-2 mt-72 max-md:mt-28">
+            <div className="grid grid-cols-3 item gap-10 text-center max-md:grid-cols-2 mt-32 max-md:mt-28">
               <div className="grid place-items-center text-[1.2rem] place-content-start max-md:place-content-center">
                 <img src={logo} alt="airtime" className="h-16" />
                 <span className="my-10 mx-8 max-md:hidden">
@@ -140,7 +146,7 @@ const Work = () => {
           <div className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64 pt-10">
             <div className="grid grid-cols-2 my-40 place-items-center md:gap-20 lg:gap-32 max-sm:grid-cols-1 max-md:my-14">
               <div className="max-md:text-center">
-                <h3 className="text-xl font-bold uppercase">GETTING BETTER EVERYDAY</h3>
+                <h3 className="text-xl font-bold uppercase max-md:mb-12">GETTING BETTER EVERYDAY</h3>
                 <div className="text-[32px] mr-20 my-12 max-md:text-2xl max-sm:text-[20px] max-sm:mr-0 max-sm:my-6">
                   We're investing in our people, communities, and tools in a relentless quest to
                   improve.

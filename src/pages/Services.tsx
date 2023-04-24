@@ -11,12 +11,12 @@ const Services = () => {
       </Helmet>
       <div className="text-ui-black bg-white">
         {/* hero section services */}
-        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] snap-center">
+        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f]">
           <div
             className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
-          pt-16 pb-52 max-md:pt-3 max-md:pb-40"
+          pt-16 pb-52 max-md:pt-3 max-md:pb-40 md:min-h-[90vh]"
           >
-            <h3 className="text-center text-xl font-bold py-10 uppercase">services</h3>
+            <h3 className="text-center text-xl font-bold py-10 uppercase snap-center">services</h3>
             <div className="">
               <p className="text-[2.5rem] font-bold max-md:text-[1.5rem]">
                 "Sietch team build the first version of our product wich led to our Series A"
@@ -30,20 +30,20 @@ const Services = () => {
         </section>
 
         {/* Our services section */}
-        <section className="container mx-auto py-10 text-ui-black mt-[9rem] max-sm:mt-24 max-sm:px-6 max-sm:py-0 grid sm:grid-cols-2 lg:px-16 xl:px-64 snap-center">
+        <section className="container mx-auto py-10 text-ui-black mt-[9rem] max-sm:mt-24 max-sm:px-6 max-sm:py-0 grid sm:grid-cols-2 lg:px-16 xl:px-64 snap-start max-md:snap-center">
           <div>
             <h3 className="text-xl uppercase font-bold mb-9">our services</h3>
             <div className="text-xl xl:text-[32px] xl:leading-tight">
               There's no ego or one size fits all approach. We embrace ambiguity and flexibility as
               a necessary step toward delivering outcomes for you.
-              <p className="my-14">We can help you:</p>
+              <p className="mt-14">We can help you:</p>
             </div>
           </div>
         </section>
 
         <section
           className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64
-        grid grid-cols-3 gap-20 text-[18px] mt-16 mb-40 max-md:grid-cols-1 snap-center"
+        grid grid-cols-3 gap-20 text-[18px] mt-10 mb-40 max-md:grid-cols-1"
         >
           <div className='max-md:snap-center'>
             <img src={logo} alt="" className="my-5 max-md:my-0 h-20" />

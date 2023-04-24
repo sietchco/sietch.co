@@ -55,7 +55,7 @@ const Home = () => {
         <section>
           <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
           py-10 text-ui-black mt-[9rem] max-sm:mt-20 max-sm:py-0 snap-center grid md:grid-cols-2">
-            <div className="text-xl xl:text-[32px] xl:leading-tight">
+            <div className="text-xl xl:text-[32px] xl:leading-tight md:h-screen flex flex-col justify-center">
               <h3 className="text-xl uppercase font-bold mb-9">our story</h3>
                 Sietch was founded in 2023 by Paul Díaz, a software engineer and entrepreneur, and
                 Ericka Castillo, a venture investor, on the premise that
@@ -97,31 +97,33 @@ const Home = () => {
         {/* we the action section */}
         <section
           className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
-        text-ui-black mt-[9rem] max-md:mt-24 grid sm:grid-cols-2 max-md:pt-10 max-md:pb-20 sm:gap-10 xl:gap-40 place-items-center md:pb-[10rem] snap-center"
+        text-ui-black mt-[9rem] max-md:mt-24 grid sm:grid-cols-2 max-md:pt-10 max-md:pb-20 sm:gap-10 xl:gap-40 place-items-center snap-center"
         >
           <img src={img} />
-          <div>
-            <h3 className="order-last text-xl uppercase font-bold mb-9 max-md:mt-10">
+          <div className='md:h-screen flex flex-col justify-center'>
+            <h3 className="text-xl uppercase font-bold mb-9 max-md:mt-10">
               we the action
             </h3>
             <div className="text-xl xl:leading-tight max-sm:pb-14 pb-20">
               Over 42,000 lawyers recruited to support more than 500 nonprofits nationwide.
             </div>
-            <Button>VIEW CASE STUDY</Button>
+            <div>
+              <Button>VIEW CASE STUDY</Button>
+            </div>
           </div>
         </section>
 
         {/* today section with bg dark and numbers */}
-        <section className="text-ui-white bg-today mb-[530px] max-md:mb-[340px] snap-center">
+        <section className="text-ui-white bg-today mb-[530px] max-md:mb-[340px]">
           <motion.div
           variants={Animations.bgdark} initial='hidden' animate='visible'
           onAnimationComplete={() => setShowImage(true)}
           className='absolute bg-black h-full w-full'></motion.div>
-          <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 py-40 max-sm:pb-28 xl:pt-64 overflow-hidden">
-            <div className="grid grid-cols-2 place-items-center gap-72 relative max-lg:gap-10 max-sm:grid-cols-1 ">
+          <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 py-40 xl:pt-64 overflow-hidden snap-center">
+            <div className="grid grid-cols-2 place-items-center gap-72 relative max-lg:gap-10 max-sm:grid-cols-1">
               <div className="z-10">
                 <h3 className="text-xl font-bold uppercase">today</h3>
-                <div className="text-3xl my-12 max-md:text-2xl max-md:text-[20px]  max-sm:mr-[13rem] max-sm:my-10">
+                <div className="text-3xl my-12 max-md:text-2xl max-md:text-[20px]  max-sm:mr-[7rem] max-sm:my-10">
                   We're a distributed team of talented builders united and inspired by the impact of
                   our work.
                 </div>
@@ -137,7 +139,7 @@ const Home = () => {
               </motion.div> }
             </div>
 
-            <div className="flex justify-between text-8xl pt-60 max-md:grid max-md:grid-cols-2 max-md:text-6xl max-md:pt-40">
+            <div className="flex justify-between text-8xl pt-60 max-md:grid max-md:grid-cols-2 max-md:text-6xl max-md:pt-36">
               <div className="flex flex-col items-center z-0 max-sm:mb-14 font-numbers">
                 <Counter from={0} to={9} />
                 <span className="text-base mt-6 font-sans">Years in business</span>

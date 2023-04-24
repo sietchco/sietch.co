@@ -13,13 +13,13 @@ const Team = () => {
       </Helmet>
       <div className="text-ui-black bg-white">
         {/* hero section our team */}
-        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] snap-center">
+        <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] ">
           <div
             className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
-          pt-16 pb-52 max-md:pt-3 max-md:pb-36"
+          pt-20 pb-52 max-md:pt-3 max-md:pb-36 md:min-h-[90vh]"
           >
-            <h3 className="text-center text-xl font-bold py-10 uppercase">our team</h3>
-            <div className="">
+            <h3 className="text-center text-xl font-bold py-10 uppercase snap-center">our team</h3>
+            <div>
               <p className="text-[2.5rem] font-bold max-md:text-[1.5rem]">
                 "Sietch believes that people are what make a company valuable. Both internally and
                 with partners, we work with good people all around."
@@ -51,7 +51,7 @@ const Team = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-32 text-center text-ui-gray max-md:grid-cols-1 max-md:gap-1 snap-center">
+          <div className="grid grid-cols-3 gap-32 text-center text-ui-gray max-md:grid-cols-1 max-md:gap-1 snap-end max-md:snap-center">
             <div className="text-8xl max-md:text-6xl font-numbers">
               <Counter from={0} to={80} />
               <h3 className="text-base my-6 font-sans">Growth stage children in development</h3>
@@ -72,7 +72,7 @@ const Team = () => {
           className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
       grid grid-cols-2 gap-32 place-items-center max-md:grid-cols-1 max-md:gap-2"
         >
-          <div className='snap-center max-md:snap-start'>
+          <div className='snap-center max-md:snap-start md:h-screen flex flex-col justify-center'>
             <h3 className="text-xl font-bold my-10 max-md:text-xl">TEAM</h3>
             <div className="text-3xl max-md:text-xl">
               We're a passionate and creative team that likes to work hard and have fun.
@@ -83,16 +83,18 @@ const Team = () => {
             </div>
           </div>
           <img src={img} alt="" />
-          <div className='snap-center'>
-            <h3 className="text-xl font-bold my-10 max-md:text-xl">PERKS</h3>
-            <div className="text-3xl max-md:text-xl">
-              We succeed when we create the conditions for our team to thrive. In addition to a
-              competitive benefits package we also offer a number of perks:
-            </div>
-          </div>
         </section>
 
-        <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 my-40 max-md:my-20 snap-center">
+        <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 my-40 max-md:my-20 snap-center md:h-screen max-md:snap-start">
+          <div className='grid grid-cols-2 max-md:grid-cols-1'>
+            <div className='my-16 max-md:my-2'>
+              <h3 className="text-xl font-bold my-10 max-md:my-7 max-md:text-xl">PERKS</h3>
+              <p className="text-3xl max-md:text-xl">
+                We succeed when we create the conditions for our team to thrive. In addition to a
+                competitive benefits package we also offer a number of perks:
+              </p>
+            </div>
+          </div>
           <div className="flex items-center">
             <img src={logo} alt="" className="mr-7 h-20" />
             <div className="text-xl">
@@ -125,7 +127,7 @@ const Team = () => {
 
         {/* Join us section */}
         <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f]">
-          <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 py-52 max-md:py-32 snap-center">
+          <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 py-52 max-md:py-32 snap-center max-md:snap-start">
             <h3 className="text-center text-5xl mb-40 max-md:mb-36 max-md:text-4xl">Join us!</h3>
 
             <div className="grid grid-cols-2 gap-10 text-xl max-md:grid-cols-1">
