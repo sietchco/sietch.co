@@ -100,7 +100,7 @@
 .sb-underline::after {
   content: '';
   position: absolute;
-  margin-bottom: -5px;
+  margin-bottom: -2px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -171,4 +171,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth !important;
 }

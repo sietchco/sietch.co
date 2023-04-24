@@ -26,7 +26,7 @@ const Contact = () => {
       </Helmet>
       <section className="bg-gradient-to-b from-[#D8E6F566] to-[#bbd0e63f] bg-white">
         <div className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 pt-14 pb-28 max-md:pt-0 max-md:pb-[4rem]">
-          <h3 className="text-xl font-bold uppercase text-center">contact</h3>
+          <h3 className="text-xl font-bold uppercase text-center snap-center">contact</h3>
           <h2 className="text-6xl text-center my-20 max-md:text-4xl">Let's build together</h2>
 
           <div className="bg-ui-white h-[570px] md:w-[700px] mx-auto">
