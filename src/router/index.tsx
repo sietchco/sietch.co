@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Contact from '@/pages/Contact'
 import Home from '@/pages/Home'
+import NotFound from '@/pages/NotFound'
 import Services from '@/pages/Services'
 import Team from '@/pages/Team'
 import Work from '@/pages/Work'
@@ -26,6 +27,10 @@ const browserRouter = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact />,
+  },
+  {
+    path: '*',
+    element: <NotFound />,
   },
 ])
 
