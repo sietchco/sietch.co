@@ -57,12 +57,14 @@ const Home = () => {
           py-10 text-ui-black mt-[9rem] max-sm:mt-20 max-sm:py-0 snap-center grid md:grid-cols-2">
             <div className="text-xl xl:text-[32px] xl:leading-tight md:h-screen flex flex-col justify-center">
               <h3 className="text-xl uppercase font-bold mb-9">our story</h3>
+                <div>
                 Sietch was founded in 2023 by Paul Díaz, a software engineer and entrepreneur, and
                 Ericka Castillo, a venture investor, on the premise that
               <strong className="ml-2">
                 entrepreneurs and philanthropists need a better services model for building
                 technology.
               </strong>
+              </div>
             </div>
           </div>
         </section>
