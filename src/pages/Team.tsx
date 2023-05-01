@@ -1,7 +1,9 @@
 import { Helmet } from 'react-helmet'
 
-import img from '@/assets/img/image.png'
+import pd from '@/assets/img/pd.jpg'
 import logo from '@/assets/img/sietch-logo.png'
+import tb from '@/assets/img/tb.jpg'
+import team from '@/assets/img/team.jpg'
 import Main from '@/layouts/Main'
 import Counter from '@/utils/Counter'
 
@@ -39,7 +41,7 @@ const Team = () => {
             </h2>
 
             <div className="grid grid-cols-2 gap-32 place-items-center mb-36 max-md:grid-cols-1 max-md:gap-1 max-md:mb-24">
-              <img src={img} alt="" title="" decoding="async" />
+              <img src={team} alt="" title="" decoding="async" />
               <div>
                 <h3 className="text-xl font-bold my-10 max-md:text-xl">ONE SIETCH</h3>
                 <div className="text-3xl max-md:text-xl">
@@ -82,7 +84,7 @@ const Team = () => {
               </p>
             </div>
           </div>
-          <img src={img} alt="" />
+          <img src={tb} alt="" />
         </section>
 
         <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64 my-40 max-md:my-20 snap-center md:h-screen max-md:snap-start">
@@ -177,25 +179,25 @@ const Team = () => {
             </div>
             <div className="grid grid-cols-4 gap-28 mt-28 max-md:grid-cols-2 max-md:gap-16 max-md:mt-24 max-md:snap-end">
               <div>
-                <img src={img} />
+                <img src={pd} />
+                <h3 className="mt-8 mb-2 font-bold">Paul Díaz</h3>
+                <span>Founder</span>
+              </div>
+              {/* <div>
+                <img src={pd} />
                 <h3 className="mt-8 mb-2 font-bold">Paul Díaz</h3>
                 <span>Founder</span>
               </div>
               <div>
-                <img src={img} />
+                <img src={pd} />
                 <h3 className="mt-8 mb-2 font-bold">Paul Díaz</h3>
                 <span>Founder</span>
               </div>
               <div>
-                <img src={img} />
+                <img src={pd} />
                 <h3 className="mt-8 mb-2 font-bold">Paul Díaz</h3>
                 <span>Founder</span>
-              </div>
-              <div>
-                <img src={img} />
-                <h3 className="mt-8 mb-2 font-bold">Paul Díaz</h3>
-                <span>Founder</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

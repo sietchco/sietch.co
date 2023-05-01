@@ -1,7 +1,7 @@
 import { motion, MotionValue, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 
-import img from '@/assets/img/image.png'
+import uc from '@/assets/img/u-c.jpg'
 
 const useParallax = (value: MotionValue<number>, distance: number) => {
   return useTransform(value, [0, 1], [-distance, distance])
@@ -20,15 +20,14 @@ const Parallax = () => {
       >
         <motion.img
         initial={{ opacity: 0}}
-        whileInView={{ opacity: 1, transition: { duration: 2.5 } }}
-        src={img} />
+        whileInView={{ opacity: 1, transition: { duration: 1.5 } }}
+        src={uc} />
       </div>
       <motion.div
         initial={{ opacity: 0, y: -50}}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-        exit={{ opacity:0, y: 50}}
         style={{ y }}
-        className="max-md:pt-32"
+        className="max-md:pt-20"
       >
         <h2 className="text-xl uppercase font-bold m-0">the problem</h2>
         <div className="text-2xl">Agencies have unstable teams and unexpected costs</div>

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 
-import img from '@/assets/img/image.png'
+import cr from '@/assets/img/c-r.jpg'
 import america from '@/assets/svg/svg-america.svg'
 import Button from '@/components/ui/Button'
 import Main from '@/layouts/Main'
@@ -101,7 +101,7 @@ const Home = () => {
           className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
         text-ui-black mt-[9rem] max-md:mt-24 grid sm:grid-cols-2 max-md:pt-10 max-md:pb-20 sm:gap-10 xl:gap-40 place-items-center snap-center"
         >
-          <img src={img} />
+          <img src={cr} />
           <div className='md:h-screen flex flex-col justify-center'>
             <h3 className="text-xl uppercase font-bold mb-9 max-md:mt-10">
               we the action
