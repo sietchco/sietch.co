@@ -1,7 +1,10 @@
 import { Helmet } from 'react-helmet'
 
-import img from '@/assets/img/image.png'
+import cr from '@/assets/img/c-r.jpg'
+import moving from '@/assets/img/moving.jpg'
+import radio from '@/assets/img/radio.jpg'
 import logo from '@/assets/img/sietch-logo.png'
+import tw from '@/assets/img/tw.jpg'
 import Button from '@/components/ui/Button'
 import Main from '@/layouts/Main'
 import Counter from '@/utils/Counter'
@@ -38,7 +41,7 @@ const Work = () => {
           className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64
       grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28 snap-center"
         >
-          <img src={img} />
+          <img src={cr} />
 
           <div className='md:h-screen flex flex-col justify-center'>
               <h3 className="text-xl uppercase font-bold mb-9 max-md:mt-10">
@@ -75,14 +78,14 @@ const Work = () => {
             </div>
           </div>
 
-          <img src={img} className="max-md:pt-10" />
+          <img src={moving} className="max-md:pt-10" />
         </section>
 
         <section
           className="container mx-auto max-sm:px-6 lg:px-16 xl:px-64
       grid md:grid-cols-2 my-56 items-center md:gap-20 lg:gap-32 max-md:my-28 snap-center"
         >
-          <img src={img} />
+          <img src={radio} />
 
           <div className='md:h-screen flex flex-col justify-center'>
             <h3 className="text-xl uppercase font-bold mb-9 max-md:mt-10">
@@ -174,7 +177,7 @@ const Work = () => {
                 </div>
                 <Button>VISIT CODEABLE</Button>
               </div>
-              <img src={img} className="max-md:pt-14 max-md:pb-10 max-md:snap-end" />
+              <img src={tw} className="max-md:pt-14 max-md:pb-10 max-md:snap-end" />
             </div>
           </div>
         </section>

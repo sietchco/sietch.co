@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 
-import img from '@/assets/img/image.png'
+import cr from '@/assets/img/c-r.jpg'
 import america from '@/assets/svg/svg-america.svg'
 import Button from '@/components/ui/Button'
 import Main from '@/layouts/Main'
@@ -57,24 +57,21 @@ const Home = () => {
           py-10 text-ui-black mt-[9rem] max-sm:mt-20 max-sm:py-0 snap-center grid md:grid-cols-2">
             <div className="text-xl xl:text-[32px] xl:leading-tight md:h-screen flex flex-col justify-center">
               <h3 className="text-xl uppercase font-bold mb-9">our story</h3>
+                <div>
                 Sietch was founded in 2023 by Paul Díaz, a software engineer and entrepreneur, and
                 Ericka Castillo, a venture investor, on the premise that
               <strong className="ml-2">
                 entrepreneurs and philanthropists need a better services model for building
                 technology.
               </strong>
+              </div>
             </div>
           </div>
         </section>
 
         {/* the problem section */}
-        <section
-          className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64">
-          {[1,2,3].map((index) => (
-            <section key={index} className='snap-center'>
-                <Parallax />
-            </section>
-          ))}
+        <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64">
+          <Parallax />
         </section>
 
         {/* sietch message section with colorful bg */}
@@ -99,7 +96,7 @@ const Home = () => {
           className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64
         text-ui-black mt-[9rem] max-md:mt-24 grid sm:grid-cols-2 max-md:pt-10 max-md:pb-20 sm:gap-10 xl:gap-40 place-items-center snap-center"
         >
-          <img src={img} />
+          <img src={cr} />
           <div className='md:h-screen flex flex-col justify-center'>
             <h3 className="text-xl uppercase font-bold mb-9 max-md:mt-10">
               we the action
