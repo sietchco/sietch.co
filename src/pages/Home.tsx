@@ -70,13 +70,8 @@ const Home = () => {
         </section>
 
         {/* the problem section */}
-        <section
-          className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64">
-          {[1,2,3].map((index) => (
-            <section key={index} className='snap-center'>
-                <Parallax />
-            </section>
-          ))}
+        <section className="container mx-auto max-sm:px-6 md:px-14 lg:px-16 xl:px-64">
+          <Parallax />
         </section>
 
         {/* sietch message section with colorful bg */}
