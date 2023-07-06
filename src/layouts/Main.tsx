@@ -17,7 +17,9 @@ const Main = (props: MainProps) => {
   return (
     <div>
       <Navigation navbar={navbar} setNavbar={setNavbar} />
+
       <main className={childrenWrapperclasses}>{children}</main>
+
       <Footer />
     </div>
   )

@@ -48,54 +48,64 @@ const Navigation = (props: NavigationProps) => {
     'max-md:ml-5 md:ml-20 max-md:w-40 list-none overflow-hidden',
     navbar ? '' : 'hidden',
   )
-  
+
   return (
-    <div className="bg-gradient-to-b from-[#EEF3F6] to-[#EEF3F6]">
+    <div className="fixed left-0 top-0 w-full">
       <nav className="flex justify-between items-center z-50">
         <Link to="/" className="flex items-center">
           <img src={logoSietch} alt="SietchLogo" className="h-10 max-md:mt-6 ml-12 max-md:ml-5" />
         </Link>
 
         <div className={linksWrapperClasses}>
-
-          <motion.div variants={Animations.container} initial='hidden' whileInView='show' className={navbar ? 'md:mr-10 text-end' : 'flex'}>
+          <motion.div
+            variants={Animations.container}
+            initial="hidden"
+            whileInView="show"
+            className={navbar ? 'md:mr-10 text-end' : 'flex'}
+          >
             <div className={showHomeLink}>
-              <Link to='/'>
-                <motion.li className='sb-underline my-2 w-40' variants={Animations.item}>
+              <Link to="/">
+                <motion.li className="sb-underline my-2 w-40" variants={Animations.item}>
                   home
                 </motion.li>
               </Link>
             </div>
-            <div className='overflow-hidden md:ml-20 list-none max-md:ml-5 max-md:w-36'>
-              <Link to='/work'>
-                <motion.li className={`sb-underline my-2 ${navbar ? 'w-36' : ''}`} variants={Animations.item}>
+            <div className="overflow-hidden md:ml-20 list-none max-md:ml-5 max-md:w-36">
+              <Link to="/work">
+                <motion.li
+                  className={`sb-underline my-2 ${navbar ? 'w-36' : ''}`}
+                  variants={Animations.item}
+                >
                   work
                 </motion.li>
               </Link>
             </div>
-            <div className='overflow-hidden md:ml-20 list-none max-md:ml-5 max-md:w-[13.1rem]'>
-              <Link to='/services'>
-                <motion.li className='sb-underline my-2' variants={Animations.item}>
+            <div className="overflow-hidden md:ml-20 list-none max-md:ml-5 max-md:w-[13.1rem]">
+              <Link to="/services">
+                <motion.li className="sb-underline my-2" variants={Animations.item}>
                   services
                 </motion.li>
               </Link>
             </div>
-            <div className='overflow-hidden md:ml-20 list-none max-md:ml-5 max-md:w-36'>
-              <Link to='/team'>
-                <motion.li className={`sb-underline my-2 ${navbar ? 'w-36' : ''}`} variants={Animations.item}>
+            <div className="overflow-hidden md:ml-20 list-none max-md:ml-5 max-md:w-36">
+              <Link to="/team">
+                <motion.li
+                  className={`sb-underline my-2 ${navbar ? 'w-36' : ''}`}
+                  variants={Animations.item}
+                >
                   team
                 </motion.li>
               </Link>
             </div>
-            <div className='overflow-hidden md:ml-20 list-none max-md:ml-5 max-md:w-52 '>
-              <Link to='/contact'>
-                <motion.li className='sb-underline my-2' variants={Animations.item}>
+            <div className="overflow-hidden md:ml-20 list-none max-md:ml-5 max-md:w-52 ">
+              <Link to="/contact">
+                <motion.li className="sb-underline my-2" variants={Animations.item}>
                   contact
                 </motion.li>
               </Link>
             </div>
           </motion.div>
-          
+
           <div className={sidebarClasses}>
             <span className="mr-10 font-bold text-xl tracking-[-1px]">Sietch</span>
             <span className="mr-10 cursor-pointer white-underline">Linkedin</span>
